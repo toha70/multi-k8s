@@ -1,0 +1,12 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name:  clinet-cluster-ip-service
+spec:
+  selector:
+    component:  web
+  type:  ClusterIP 
+  ports:
+  - name:  name-of-the-port
+    port:  3000
+    targetPort:  3000
