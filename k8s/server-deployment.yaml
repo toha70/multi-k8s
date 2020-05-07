@@ -13,8 +13,8 @@ spec:
         component: server
     spec:
       containers:
-        - image:  toha70/multi-api
-          name:  server
+        - image: toha70/multi-server
+          name: server
           ports:
           - containerPort: 5000
           env:
